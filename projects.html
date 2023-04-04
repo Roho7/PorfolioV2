@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Mistu Portfolio</title>
+  </head>
+  <body>
+    <!-- ------------------------------NAVBAR---------------------------->
+    <nav>
+      <div class="nav-logo nav-cont">
+        <img class="logo" src="./assets/logo.svg" />
+      </div>
+      <div class="nav-links nav-cont">
+        <a class="interactable" href="#">Work</a>
+        <a class="interactable" href="#">About</a>
+      </div>
+      <div class="nav-socials nav-cont">
+        <a class="interactable" href="#"><i class="bx bxl-instagram"></i></a>
+        <a class="interactable" href="#"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="nav-contacts nav-cont">
+        <a class="interactable" href="#">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ------------------------------NAVBAR---------------------------->
+    <!-- ---------------------------BODY-------------------------------->
+    <main class="container">
+      <div class="about-header">
+        <h1>Projects</h1>
+      </div>
+      <div class="project-navigator">
+        <button data-button="UIUX" href="">UI/UX</button>
+        <button data-button="Animation" href="">Animation</button>
+      </div>
+      <!--! ------------------------PROJECT 1----------------------- -->
+      <div id="UIUX" data-project="UI/UX" class="project-element interactable">
+        <div class="project-img">
+          <img src="./assets/HS-report-img.png" alt="" />
+        </div>
+        <div class="project-details">
+          <div>
+            <h3>Client Portfolio</h3>
+            <p class="sans">2022</p>
+          </div>
+          <p class="sans tag">UI DESIGN</p>
+        </div>
+      </div>
+      <!-- !------------------------PROJECT 2----------------------- -->
+      <div id="UIUX" data-project="UI/UX" class="project-element interactable">
+        <div class="project-img">
+          <img src="./assets/Fr1.png" alt="" />
+        </div>
+        <div class="project-details">
+          <div>
+            <h3>Frenzopay</h3>
+            <p class="sans">2022</p>
+          </div>
+          <p class="sans tag">UI DESIGN</p>
+        </div>
+      </div>
+      <!-- ! ------------------------PROJECT 3----------------------- -->
+      <div
+        id="Animation"
+        data-project="Animation"
+        class="project-element interactable"
+      >
+        <div class="project-img">
+          <img src="./assets/HS-report-img.png" alt="" />
+        </div>
+        <div class="project-details">
+          <div>
+            <h3>Wedding Video</h3>
+            <p class="sans">2022</p>
+          </div>
+          <p class="sans tag">UI DESIGN</p>
+        </div>
+      </div>
+    </main>
+    <section class="bottom-navigation">
+      <div class="bottom-navigation-element article-section interactable">
+        <h3><i class="fi fi-rr-arrow-small-left"></i> See Projects</h3>
+      </div>
+      <div class="bottom-navigation-element article-section interactable">
+        <h3>Contact Me <i class="fi fi-rr-arrow-small-right"></i></h3>
+      </div>
+    </section>
+    <!-- -----v-------------------------CURSOR---------------------------->
+    <div class="cursor">
+      <i class="bi bi-arrow-up-right"></i>
+    </div>
+  </body>
+</html>

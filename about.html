@@ -9,14 +9,15 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
     <script src="script.js" defer></script>
-    <title>Mistu Portfolio</title>
+    <title>Rohosen Bhattacharya</title>
   </head>
   <body>
     <!-- ------------------------------NAVBAR---------------------------->
     <nav>
       <div class="nav-logo nav-cont">
-        <img class="logo" src="./assets/logo.svg" />
+        <a href="index.html"><img class="logo" src="./assets/logo.svg" /></a>
       </div>
       <div class="nav-links nav-cont">
         <a class="interactable" href="projects.html">Work</a>
@@ -74,7 +75,7 @@
           <h2>Work Experience</h2>
         </div>
         <div class="about-body-element about-img">
-          <button class="interactable">Download CV</button>
+          <button class="interactable"> <a href="assets/Rohosen_Bhattacharya_Resume_FEBRUARY.pdf" download>Download CV</a></button>
         </div>
         <div class="about-body-element">
           <div class="work-experience-grid">
@@ -84,7 +85,7 @@
               <p class="sans">2022 - PRESENT</p>
             </div>
             <div class="work-experience-element card">
-              <h3>Frenzopay Payments</h3>
+              <h3>Frenzopay</h3>
               <p>UX Designer</p>
               <p class="sans">2022 - PRESENT</p>
             </div>
@@ -128,13 +129,20 @@
         </div>
       </div>
     </main>
+
+    <!-- !----------------- BOTTOM NAVIGATION ------------- -->
+
     <section class="bottom-navigation">
-      <div class="bottom-navigation-element article-section interactable">
-        <h3><i class="fi fi-rr-arrow-small-left"></i> See Projects</h3>
-      </div>
-      <div class="bottom-navigation-element article-section interactable">
-        <h3>Contact Me <i class="fi fi-rr-arrow-small-right"></i></h3>
-      </div>
+      <a href="projects.html">
+        <div class="bottom-navigation-element article-section interactable">
+          <h3><i class="fi fi-rr-arrow-small-left"></i> See Projects</h3>
+        </div>
+      </a>
+      <a href="contact.html">
+        <div class="bottom-navigation-element article-section interactable">
+          <h3>Contact Me <i class="fi fi-rr-arrow-small-right"></i></h3>
+        </div>
+      </a>
     </section>
     <!-- -----v-------------------------CURSOR---------------------------->
     <div class="cursor">

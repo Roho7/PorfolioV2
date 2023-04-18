@@ -9,14 +9,15 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
     <script src="script.js" defer></script>
-    <title>Mistu Portfolio</title>
+    <title>Rohosen Bhattacharya</title>
   </head>
   <body>
     <!-- ------------------------------NAVBAR---------------------------->
     <nav>
       <div class="nav-logo nav-cont">
-        <img class="logo" src="./assets/logo.svg" />
+        <a href="index.html"><img class="logo" src="./assets/logo.svg" /></a>
       </div>
       <div class="nav-links nav-cont">
         <a class="interactable" href="projects.html">Work</a>
@@ -43,24 +44,51 @@
     <main class="container">
       <div class="about-header">
         <p class="sans">PROJECT</p>
-        <h1>Client Portfolio</h1>
+        <h1>Portfolio Design</h1>
         <p class="sans tag">UI DESIGN</p>
-        <h4 class=""><i class="fi fi-brands-figma"></i> Figma</h4>
+        <h4 class=""><i class="fi fi-brands-figma"></i>&nbsp Figma</h4>
         <div class="moving-blob"></div>
+        <span class="sans">2022</span>
+      </div>
+      <div class="project-info-container">
+        <span class="sans">CONTEXT</span>
+        <p>
+          In Novermber 2022, I was assigned the task to design a portfolio for a
+          client. The Client had an existing website which was shabby and poorly
+          implemented. I was brought in to take a look at the website and give
+          the portfolio into a brand new look.
+        </p>
       </div>
       <div class="content-container">
         <img src="./assets/HS-report-img.png" alt="" />
-        <video src="./assets/HS-video.mp4" controls></video>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/MK0ugTxH-kw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <!-- <video src="./assets/HS-video.mp4" controls></video> -->
       </div>
     </main>
+
+    <!-- !----------------- BOTTOM NAVIGATION ------------- -->
+
     <section class="bottom-navigation">
-      <div class="bottom-navigation-element article-section interactable">
-        <h3><i class="fi fi-rr-arrow-small-left"></i> See Projects</h3>
-      </div>
-      <div class="bottom-navigation-element article-section interactable">
-        <h3>Contact Me <i class="fi fi-rr-arrow-small-right"></i></h3>
-      </div>
+      <a href="projects.html">
+        <div class="bottom-navigation-element article-section interactable">
+          <h3><i class="fi fi-rr-arrow-small-left"></i> See Projects</h3>
+        </div>
+      </a>
+      <a href="frenzopayweb.html">
+        <div class="bottom-navigation-element article-section interactable">
+          <h3>Next Project <i class="fi fi-rr-arrow-small-right"></i></h3>
+        </div>
+      </a>
     </section>
+
     <!-- -----v-------------------------CURSOR---------------------------->
     <div class="cursor">
       <i class="bi bi-arrow-up-right"></i>

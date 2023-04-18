@@ -1,4 +1,4 @@
-// ------CURSOR =================
+//! ------CURSOR =================
 const cursor = document.querySelector(".cursor");
 
 const animateCursor = (g, interact) => {
@@ -43,7 +43,7 @@ window.onmousemove = (g) => {
   }
 };
 
-// ======================= GLOW EFFECT =======================
+//!======================= GLOW EFFECT =======================
 const handleOnMouseMove = (e) => {
   const { currentTarget: target } = e;
 
@@ -59,7 +59,7 @@ for (const card of document.querySelectorAll(".about-header")) {
   card.onmousemove = (e) => handleOnMouseMove(e);
 }
 
-// =============NAVIGATION =======================
+//! =============NAVIGATION =======================
 
 const navBtn = document.querySelectorAll("[data-button]");
 const projects = document.querySelectorAll("[data-project]");
@@ -72,9 +72,15 @@ function showProject(project) {
   });
 }
 
+function deactivateBTN() {
+  navBtn.forEach((e) => e.classList.remove("btn-active"));
+}
+
 navBtn.forEach(
   (btn) =>
     (btn.onclick = function () {
       showProject(this.dataset.button);
+      deactivateBTN();
+      btn.classList.add("btn-active");
     })
 );

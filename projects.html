@@ -9,14 +9,15 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
     <script src="script.js" defer></script>
-    <title>Mistu Portfolio</title>
+    <title>Rohosen Bhattacharya</title>
   </head>
   <body>
     <!-- ------------------------------NAVBAR---------------------------->
     <nav>
       <div class="nav-logo nav-cont">
-        <img class="logo" src="./assets/logo.svg" />
+        <a href="index.html"><img class="logo" src="./assets/logo.svg" /></a>
       </div>
       <div class="nav-links nav-cont">
         <a class="interactable" href="projects.html">Work</a>
@@ -46,61 +47,82 @@
         <h1>Projects</h1>
       </div>
       <div class="project-navigator">
-        <button data-button="UIUX" href="">UI/UX</button>
+        <button data-button="UIUX" class="btn-active" href="">UI/UX</button>
         <button data-button="Animation" href="">Animation</button>
       </div>
-      <!--! ------------------------PROJECT 1----------------------- -->
-      <div id="UIUX" data-project="UI/UX" class="project-element interactable">
-        <div class="project-img">
-          <img src="./assets/HS-report-img.png" alt="" />
-        </div>
-        <div class="project-details">
-          <div>
-            <h3>Client Portfolio</h3>
-            <p class="sans">2022</p>
+      <!--! ------------------------HITESH SAINI PORTFOLIO----------------------- -->
+      <a href="hitessh.html">
+        <div
+          id="UIUX"
+          data-project="UI/UX"
+          class="project-element interactable active"
+        >
+          <div class="project-img">
+            <img src="./assets/HS-report-img.png" alt="" />
           </div>
-          <p class="sans tag">UI DESIGN</p>
-        </div>
-      </div>
-      <!-- !------------------------PROJECT 2----------------------- -->
-      <div id="UIUX" data-project="UI/UX" class="project-element interactable">
-        <div class="project-img">
-          <img src="./assets/Fr1.png" alt="" />
-        </div>
-        <div class="project-details">
-          <div>
-            <h3>Frenzopay</h3>
-            <p class="sans">2022</p>
+          <div class="project-details">
+            <div>
+              <h3>Portfolio Design</h3>
+              <p class="sans">2022</p>
+            </div>
+            <p class="sans tag">UI DESIGN</p>
           </div>
-          <p class="sans tag">UI DESIGN</p>
         </div>
-      </div>
-      <!-- ! ------------------------PROJECT 3----------------------- -->
-      <div
-        id="Animation"
-        data-project="Animation"
-        class="project-element interactable"
-      >
-        <div class="project-img">
-          <img src="./assets/HS-report-img.png" alt="" />
-        </div>
-        <div class="project-details">
-          <div>
-            <h3>Wedding Video</h3>
-            <p class="sans">2022</p>
+      </a>
+      <!-- !------------------------FRENZOPAY WEBSITE----------------------- -->
+      <a href="frenzopayweb.html">
+        <div
+          id="UIUX"
+          data-project="UI/UX"
+          class="project-element interactable active"
+        >
+          <div class="project-img">
+            <img src="./assets/Fr1.png" alt="" />
           </div>
-          <p class="sans tag">UI DESIGN</p>
+          <div class="project-details">
+            <div>
+              <h3>Frenzopay</h3>
+              <p class="sans">2022</p>
+            </div>
+            <p class="sans tag">UI DESIGN</p>
+          </div>
         </div>
-      </div>
+      </a>
+      <!-- ! ------------------------WEDDING VIDEO----------------------- -->
+      <a href="wedding.html">
+        <div
+          id="Animation"
+          data-project="Animation"
+          class="project-element interactable"
+        >
+          <div class="project-img">
+            <img src="./assets/wed1.png" alt="" />
+          </div>
+          <div class="project-details">
+            <div>
+              <h3>Animated Wedding Card</h3>
+              <p class="sans">2022</p>
+            </div>
+            <p class="sans tag">UI DESIGN</p>
+          </div>
+        </div>
+      </a>
     </main>
+    <!-- !----------------- BOTTOM NAVIGATION ------------- -->
+
     <section class="bottom-navigation">
-      <div class="bottom-navigation-element article-section interactable">
-        <h3><i class="fi fi-rr-arrow-small-left"></i> See Projects</h3>
-      </div>
-      <div class="bottom-navigation-element article-section interactable">
-        <h3>Contact Me <i class="fi fi-rr-arrow-small-right"></i></h3>
-      </div>
+      <a href="index.html">
+        <div class="bottom-navigation-element article-section interactable">
+          <h3><i class="fi fi-rr-arrow-small-left"></i> Back Home</h3>
+        </div>
+      </a>
+      <a href="contact.html">
+        <div class="bottom-navigation-element article-section interactable">
+          <h3>Contact Me <i class="fi fi-rr-arrow-small-right"></i></h3>
+        </div>
+      </a>
     </section>
+
     <!-- -----v-------------------------CURSOR---------------------------->
     <div class="cursor">
       <i class="bi bi-arrow-up-right"></i>

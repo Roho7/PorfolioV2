@@ -445,13 +445,23 @@ body:hover > .cursor {
   h1 {
     font-size: 3rem;
   }
+  h2 {
+    font-size: 2rem;
+  }
+  .cursor {
+    display: none;
+  }
+  .project-info-container {
+    width: 100%;
+  }
 }
+
 @media (max-width: 768px) {
   .logo {
     max-width: 30px;
   }
   .nav-cont {
-    padding: 1rem 2rem;
+    padding: 1rem;
   }
   h1 {
     font-size: 2.5rem;
@@ -460,16 +470,19 @@ body:hover > .cursor {
     font-size: 1rem;
   }
   main > article {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: column;
   }
   .article-title-section {
     justify-content: space-around;
   }
   .article-nav-section {
-    display: none;
+    height: 60%;
+    /* display: none; */
   }
   .about-header {
-    height: 60vh;
+    height: 40vh;
   }
   .contact-header > h1 {
     font-size: 1.5rem;

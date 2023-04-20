@@ -40,6 +40,7 @@ body {
   width: 100%;
   position: relative;
   font-family: "DT Getai Grotesk Display Black", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -352,13 +353,14 @@ button:hover {
 
 .project-element {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr;
   width: 100%;
-  gap: 1rem;
-  padding: 2rem;
   border: solid 1px var(--color-2-dim);
   display: none;
+  position: relative;
+  margin-bottom: 0.5rem;
 }
+
 .project-navigator {
   margin: 2rem;
   display: flex;
@@ -389,9 +391,30 @@ button:hover {
 }
 
 .project-details {
+  padding: 2rem;
   display: flex;
+  height: 100%;
+  width: 50%;
   flex-direction: column;
   justify-content: space-between;
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    var(--color-1),
+    rgba(255, 255, 255, 0)
+  );
+  transition: all 500ms ease;
+}
+
+.project-details > * {
+  transition: all 500ms ease;
+}
+
+.project-element:hover > .project-details {
+  width: 70%;
+}
+.project-element:hover > .project-details > * {
+  transform: translateX(2rem);
 }
 
 .contact-header {

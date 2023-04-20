@@ -457,6 +457,12 @@ body:hover > .cursor {
 }
 
 @media (max-width: 768px) {
+  .container {
+    margin: 1rem;
+  }
+  .work-experience-grid {
+    overflow-x: scroll;
+  }
   .logo {
     max-width: 30px;
   }

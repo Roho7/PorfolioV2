@@ -386,6 +386,7 @@ button:hover {
 }
 
 .project-img > img {
+  /* transform: translateY(-100px); */
   width: 100%;
   object-fit: contain;
 }
@@ -504,7 +505,10 @@ body:hover > .cursor {
     flex-direction: column;
   }
   .article-title-section {
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .article-title-item {
+    padding: 1rem;
   }
   .article-nav-section {
     height: 60%;

@@ -84,3 +84,32 @@ navBtn.forEach(
       btn.classList.add("btn-active");
     })
 );
+
+// !---------------------- SLIDING TEXT -------------------------------
+
+const slidingText = document.querySelector(".sliding-text");
+const textList = [
+  "UI/UX",
+  "Interaction Design",
+  "Animation",
+  "Web-Development",
+];
+
+let currentIndex = 0;
+function changeText() {
+  slidingText.classList.add("sliding-text-animation");
+
+  slidingText.textContent = textList[currentIndex];
+  currentIndex++;
+
+  if (currentIndex >= textList.length) {
+    currentIndex = 0;
+  }
+}
+
+function animateSliding() {
+  slidingText.classList.remove("sliding-text-animation");
+}
+
+setInterval(changeText, 5000);
+setInterval(animateSliding, 999);

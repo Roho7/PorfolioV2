@@ -89,10 +89,11 @@ navBtn.forEach(
 
 const slidingText = document.querySelector(".sliding-text");
 const textList = [
-  "UI/UX",
-  "Interaction Design",
-  "Animation",
-  "Web-Development",
+  "UX Designer",
+  "Interaction Designer",
+  "Animator",
+  "Web-Developer",
+  "Lifelong Learner"
 ];
 
 let currentIndex = 0;
